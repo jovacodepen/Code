@@ -25,7 +25,7 @@ main .logo {
 
 main .photo-wall {
   height: 100vh;
-  background: url("../dist/img/hero-desktop.jpg");
+  background: url("../img/hero-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -54,7 +54,7 @@ main .main-copy {
   -ms-flex-line-pack: center;
       align-content: center;
   padding: 50px 150px;
-  background: url("../dist/img/bg-pattern-desktop.svg");
+  background: url("../img/bg-pattern-desktop.svg");
 }
 
 @media screen and (max-width: 850px) {
