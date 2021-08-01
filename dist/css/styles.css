@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+html,
+body {
+  min-height: 100%;
+  min-width: 100%;
+  font-family: 'Josefin Sans', sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+main .logo {
+  position: absolute;
+  left: 150px;
+  top: 80px;
+}
+
+@media screen and (max-width: 850px) {
+  main .logo {
+    top: 30px;
+    left: 20px;
+  }
+}
+
+main .photo-wall {
+  height: 100vh;
+  background: url("/dist/img/hero-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 850px) {
+  main .photo-wall {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    height: 40vh;
+    margin-top: 100px;
+  }
+}
+
+main .main-copy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 50px 150px;
+  background: url("/dist/img/bg-pattern-desktop.svg");
+}
+
+@media screen and (max-width: 850px) {
+  main .main-copy {
+    position: initial;
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+main .main-copy form {
+  width: 100%;
+}
+
+@media screen and (max-width: 850px) {
+  main .main-copy form .input-group {
+    width: 80%;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
+  main .main-copy form .input-group-button {
+    position: absolute;
+    height: 100%;
+    right: -20px;
+    width: 80px;
+  }
+}
+
+main .main-copy .email-input {
+  padding: 25px;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  width: 300px;
+  border: solid 1px #CE9898 0.5;
+}
+
+main .main-copy .email-submit {
+  position: relative;
+  left: -50px;
+  width: 110px;
+  border-radius: 40px !important;
+  background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c) !important;
+}
+
+@media screen and (max-width: 850px) {
+  main .main-copy .email-submit {
+    left: -10px;
+    height: 100%;
+    left: 0px;
+  }
+}
+
+main .main-copy .main-header {
+  text-transform: uppercase;
+  color: #CE9898;
+  letter-spacing: 17.32px;
+  line-height: 55px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 850px) {
+  main .main-copy .main-header {
+    font-size: 40px;
+    line-height: 55px;
+    margin-top: 30px;
+  }
+}
+
+main .main-copy .main-header strong {
+  color: #423A3A;
+}
+
+main .main-copy .main-body {
+  color: #CE9898;
+  margin-bottom: 40px;
+}

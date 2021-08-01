@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+html,
+body {
+  min-height: 100%;
+  min-width: 100%;
+  font-family: 'Josefin Sans', sans-serif !important;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+main {
+  .logo {
+    position: absolute;
+    left: 150px;
+    top: 80px;
+    @media screen and (max-width: 850px){
+        top: 30px;
+        left: 20px;
+    }
+  }
+  .photo-wall {
+    height: 100vh;
+    background: url("/dist/img/hero-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media screen and (max-width: 850px){
+        order: 1;
+        height: 40vh;
+        margin-top: 100px;
+    }
+  }
+  .main-copy {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 50px 150px;
+    background: url('/dist/img/bg-pattern-desktop.svg');
+    @media screen and (max-width: 850px){
+        position: initial;
+        padding: 10px;
+        text-align: center;
+    }
+    form {
+        width: 100%;
+        .input-group {
+            @media screen and (max-width: 850px){
+                width: 80%;
+                position: relative;
+                margin: 0 auto;
+                margin-bottom: 80px;
+                &-button {
+                    position: absolute;
+                    height: 100%;
+                    right: -20px;
+                    width: 80px;
+                }
+            }
+        }
+    }
+    .email {
+      &-input {
+        padding: 25px;
+        border-top-left-radius: 40px;
+        border-bottom-left-radius: 40px;
+        width: 300px;
+        border: solid 1px #CE9898 0.5;
+      }
+      &-submit {
+          position: relative;
+          left: -50px;
+          width: 110px;
+          border-radius: 40px !important;
+          background-image: linear-gradient(135deg, rgb(248, 191, 191), rgb(238, 140, 140)) !important;
+          @media screen and (max-width: 850px){
+            left: -10px;
+            height: 100%;
+            left: 0px;
+          }
+      }
+    }
+    .main-header {
+        text-transform: uppercase;
+        color: #CE9898;
+        letter-spacing: 17.32px;
+        line-height: 55px;
+        font-weight: 300;
+        margin-bottom: 20px;
+        @media screen and (max-width: 850px){
+            font-size: 40px;
+            line-height: 55px;
+            margin-top: 30px;
+        }
+        strong {
+            color: #423A3A;
+        }
+    }
+    .main-body {
+        color: #CE9898;
+        margin-bottom: 40px;
+    }
+  }
+}
